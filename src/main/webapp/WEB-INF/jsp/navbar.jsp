@@ -13,7 +13,6 @@
             </li>
             <li><a href="<c:url value='/stores'/>">Home</a></li>
             <li><a href="<c:url value='/stores/add'/>">Add Store</a></li>
-            <li><a href="<c:url value='/billing/{storeId}'/>">Billing</a></li>
         </ul>
     </nav>
 </body>

@@ -93,3 +93,36 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #555;
 }
+/* General action button styling */
+.action-button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Specific button colors */
+.edit-button {
+    background-color: #4CAF50; /* Green */
+}
+
+.delete-button {
+    background-color: #f44336; /* Red */
+}
+
+.manage-button {
+    background-color: #008CBA; /* Blue */
+}
+
+.shop-button {
+    background-color: #FF9800; /* Orange */
+}
+
+/* Hover effects */
+.action-button:hover {
+    opacity: 0.8;
+}

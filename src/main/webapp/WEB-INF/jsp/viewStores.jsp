@@ -59,10 +59,10 @@
                         <td>${store.phoneNumber}</td>
                         <td>${store.localities}</td>
                         <td>
-                            <a href="/stores/edit/${store.id}">Edit</a>
-                            <a href="/stores/delete/${store.id}">Delete</a>
-                            <a href="/stores/manageItems/${store.id}">Manage Items</a> <!-- New Button -->
-                            <a href="/stores/shop/${store.id}">Shop Now</a> <!-- New Button -->
+                            <a href="/stores/edit/${store.id}" class="action-button edit-button">Edit</a>
+                            <a href="/stores/delete/${store.id}" class="action-button delete-button">Delete</a>
+                            <a href="/stores/manageItems/${store.id}" class="action-button manage-button">Manage Items</a>
+                            <a href="/stores/shop/${store.id}" class="action-button shop-button">Shop Now</a>
                         </td>
                     </tr>
                 </c:forEach>

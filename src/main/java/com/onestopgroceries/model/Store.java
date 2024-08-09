@@ -1,20 +1,24 @@
 package com.onestopgroceries.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import java.util.List;
 
 @Entity
 public class Store {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
     private String phoneNumber;
     private String localities;
 
+    @OneToMany(mappedBy = "store", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Item> items;
+
     // Getters and Setters
+
     public Long getId() {
         return id;
     }
@@ -45,5 +49,13 @@ public class Store {
 
     public void setLocalities(String localities) {
         this.localities = localities;
+    }
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
     }
 }
