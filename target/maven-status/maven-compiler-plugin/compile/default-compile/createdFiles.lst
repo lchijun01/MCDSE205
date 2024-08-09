@@ -1,0 +1,5 @@
+com\onestopgroceries\Application.class
+com\onestopgroceries\controller\StoreController.class
+com\onestopgroceries\repository\StoreRepository.class
+com\onestopgroceries\model\Store.class
+com\onestopgroceries\service\StoreService.class
